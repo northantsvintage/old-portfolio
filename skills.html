@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
+    <title>Welcome to my Portfolio</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!--script src="js/app.js"></script-->
+	<script>
+	jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
+	});
+});
+	</script>
+    <link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<style>
+		p{
+  color:#525252;
+  font-size:12px;
+}
+
+		.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+	</style>
+    <script src="js/modernizr.js"></script>
+</head>
+<body>
+    <main class="wrap group">
+        <aside class="sidebar">
+           <div class="my-info">
+               <img src="images/me-bw.png" alt="Aida Papic" class="portfolio-image">
+               <h1>Aida Papic</h1>
+               <h2>Experienced Web and Graphic Designer<br> based in UK</h2>
+               <!--div class="social group">
+                   <a href="#" class="dribble">Dribble</a>
+                   <a href="#" class="twitter">Twitter</a>
+                   <a href="#" class="facebook">Facebook</a>
+                   <a href="#" class="googleplus">Google+</a>
+               </div-->
+           </div>
+           <nav class="menus">
+               <h3 class="work">Work</h3>
+               <ul>
+                   <li><a href="index.html">Latest</a></li>
+                   <li><a href="webdesign.html">Web Design</a></li>
+                   <li><a href="uidesign.html">Ui Design</a></li>
+				   <li><a href="emails.html">Email Campaigns</a></li>
+                   <li><a href="icons.html">Icons</a></li>
+                   <li><a href="print.html">Print</a></li>
+               </ul>
+               <h3 class="about">About</h3>
+               <ul>
+                   <li><a href="skills.html" class="current-menu-item">Skills</a></li>
+                   <li><a href="testimonials.html">Testimonials</a></li>
+               </ul>
+
+               <h3 class="contact">Contact</h3>
+               <ul>
+                   <li><a href="mailto:oblacic7@gmail.com?Subject=Hello%20Aida">Email</a></li>
+               </ul>
+           </nav>
+        </aside>
+        <div class="content">
+			
+			
+            <div class="portfolio-item group">
+              <div class="portfolio-info">
+                <div class="date">Skills</div>
+                <div class="description">
+                 Apart from the set of Web Design Skills, I posses skills in Print - InDesign, Quark Express, Adobe Acrobat. PowerPoint and Word
+                </div>
+              </div>
+              <div class="portfolio-image">
+                
+				  <div class="skillbar clearfix " data-percent="75%">
+	<div class="skillbar-title" style="background: #d35400;"><span style="z-index:10;position:relative;">HTML5</span></div>
+	<div class="skillbar-bar" style="background: #e67e22;"></div>
+	<div class="skill-bar-percent">75%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="90%">
+	<div class="skillbar-title" style="background: #2980b9;"><span style="z-index:10;position:relative;">CSS3</span></div>
+	<div class="skillbar-bar" style="background: #3498db;"></div>
+	<div class="skill-bar-percent">90%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="50%">
+	<div class="skillbar-title" style="background: #2c3e50;"><span style="z-index:10;position:relative;">jQuery</span></div>
+	<div class="skillbar-bar" style="background: #2c3e50;"></div>
+	<div class="skill-bar-percent">40%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="30%">
+	<div class="skillbar-title" style="background: #46465e;"><span style="z-index:10;position:relative;">PHP</span></div>
+	<div class="skillbar-bar" style="background: #5a68a5;"></div>
+	<div class="skill-bar-percent">30%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="75%">
+	<div class="skillbar-title" style="background: #333333;"><span style="z-index:10;position:relative;">Wordpress</span></div>
+	<div class="skillbar-bar" style="background: #525252;"></div>
+	<div class="skill-bar-percent">75%</div>
+</div> 
+
+<div class="skillbar clearfix " data-percent="95%">
+	<div class="skillbar-title" style="background: #27ae60;"><span style="z-index:10;position:relative;">SEO</span></div>
+	<div class="skillbar-bar" style="background: #2ecc71;"></div>
+	<div class="skill-bar-percent">95%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="100%">
+	<div class="skillbar-title" style="background: #124e8c;"><span style="z-index:10;position:relative;">Photoshop</span></div>
+	<div class="skillbar-bar" style="background: #4288d0;"></div>
+	<div class="skill-bar-percent">100%</div>
+</div> 
+				  
+<div class="skillbar clearfix " data-percent="85%">
+	<div class="skillbar-title" style="background: #f9be20;"><span style="z-index:10;position:relative;">Illustrator</span></div>
+	<div class="skillbar-bar" style="background: #f9dd20;"></div>
+	<div class="skill-bar-percent">85%</div>
+</div>				  <!-- End Skill Bar -->
+        </div>
+				  
+              </div>
+            </div>
+			
+            
+    </main>
+    
+</body>
+</html>
