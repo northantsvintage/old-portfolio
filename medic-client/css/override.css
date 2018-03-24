@@ -1,0 +1,106 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.white{
+  color: white;
+}
+.blue {
+  color: #43c1f3;
+}
+.gray {
+  color: gray;
+}
+.bg-light {
+  background-color: white;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-gray {
+  background-color: #f2f5fc;
+}
+.bg-blue {
+  background-color: #43c1f3;
+}
+.box-shadow {
+  box-shadow: 1px 2px 14px rgba(0, 0, 0, .5);
+}
+.overlay {
+  opacity: 0.9;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.img-fluid {
+  background-color: inherit;
+}
+.img-fluid:hover .overlay {
+  opacity: 1;
+}
+.gradient {
+  background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #1e5799 0%, #2989d8 41%, #207cca 63%, #9485f7 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #1e5799 0%,#2989d8 41%,#207cca 63%,#9485f7 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #1e5799 0%,#2989d8 41%,#207cca 63%,#9485f7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#9485f7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #43c1f3), color-stop(0.45, #34a3ea),  color-stop(1, #3a66df) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #43c1f3), color-stop(0.45, #34a3ea),  color-stop(1, #3a66df) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.font-light {
+  font-weight: 300;
+}
+.font-large {
+  font-size: 1.4em;
+}
+.section {
+  padding-top:70px;
+  padding-bottom:70px;
+}
+.section-top {
+  padding-top:120px;
+  padding-bottom:70px;
+}
+.navbar-nav {
+  /* width:50%; */
+  height: 100px;
+  /* background: url(../img/header.png); */
+  background-repeat: no-repeat;
+  background-size: 350px 100px;
+}
+.btn {
+  max-width: 200px;
+}
+.btn:hover {
+  background: -moz-linear-gradient(-45deg, #1e5799 0%, #2989d8 41%, #207cca 63%, #9485f7 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #1e5799 0%,#2989d8 41%,#207cca 63%,#9485f7 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #1e5799 0%,#2989d8 41%,#207cca 63%,#9485f7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#9485f7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.form-signin {
+    width: 100%;
+    padding: 70px 50px;
+    margin: 0 auto;
+    border-radius: 25px;
+    /* height: 100%; */
+    background: -moz-linear-gradient(-45deg, #1e5799 0%, #2989d8 41%, #207cca 63%, #9485f7 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #1e5799 0%,#2989d8 41%,#207cca 63%,#9485f7 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #1e5799 0%,#2989d8 41%,#207cca 63%,#9485f7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#9485f7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.list-unstyled > li{
+  display: inline;
+}
+.navbar-light .navbar-nav .nav-link {
+  background-color: #fff;
+  text-align: center;
+}
+/* #section6 {
+  background: url('../img/stay-in-touch.jpg') no-repeat top left;
+  height: auto;
+  background-size: cover;
+  object-fit: contain;
+} */
